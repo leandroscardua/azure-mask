@@ -63,6 +63,12 @@ style.sheet.insertRule(
 style.sheet.insertRule(
   `.${maskEnabledClassName} .user-email { ${blurCss} }`
 ); // user account dropdown email address (ADF)
+style.sheet.insertRule(
+  `.${maskEnabledClassName} .msportalfx-text-primary { ${blurCss} }`
+); // tags,subscription name and ID
+style.sheet.insertRule(
+  `.${maskEnabledClassName} .fxs-reactview-frame-active { ${blurCss} }`
+); // all child pages using react
 
 getStoredMaskedStatus(isMasked => {
   isMasked
